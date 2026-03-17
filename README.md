@@ -45,3 +45,4 @@ Para visualizar el robot en Gazebo, ejecuta el siguiente comando:
 
 ```bash
 ros2 launch turtlebot2_gazebo turtlebot2_world.launch.py
+<img width="670" height="511" alt="image" src="https://github.com/user-attachments/assets/a54a003f-1f76-44c7-bd35-ea907f8a4a83" />
