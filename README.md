@@ -64,4 +64,8 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.2}, angular: {z:
 ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0}, angular: {z: 0.5}}" -1
 ```
 
+## 🤖 Pruebas con robot físico
+
+Se realizan pruebas con el robot físico.  
+➡️ [Ver detalles aquí](Funcionamiento_Robot_Físico.md)
 
