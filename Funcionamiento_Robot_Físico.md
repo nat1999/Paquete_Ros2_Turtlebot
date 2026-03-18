@@ -38,6 +38,10 @@ Con esto, el robot queda listo para recibir comandos y operar desde ROS 2.
 Se envían comandos de velocidad utilizando mensajes tipo `Twist`. Por ejemplo:
 
 ```bash
+ros2 topic pub /commands/velocity geometry_msgs/msg/Twist "{linear: {x: 0.2}, angular: {z: 0.0}}"
+```
+
+```bash
 publishing #33: geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=0.2, y=0.0, z=0.0), angular=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=0.0))
 ```
 Este comando genera un movimiento lineal del robot hacia adelante.
