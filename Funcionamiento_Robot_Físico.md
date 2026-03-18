@@ -32,3 +32,14 @@ ros2 launch kobuki_node kobuki_node-launch.py
 Este comando inicia el driver de Kobuki, permitiendo la comunicación con el robot a través del puerto serial (`/dev/ttyUSB0`).
 
 Con esto, el robot queda listo para recibir comandos y operar desde ROS 2.
+
+## 🎮 Movimiento del robot
+
+Se envían comandos de velocidad utilizando mensajes tipo `Twist`. Por ejemplo:
+
+```bash
+publishing #33: geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=0.2, y=0.0, z=0.0), angular=geometry_msgs.msg.Vector3(x=0.0, y=0.0, z=0.0))
+```
+Este comando genera un movimiento lineal del robot hacia adelante.
+
+Al ejecutar el nodo que publica estos mensajes, el robot responde de forma inmediata, confirmando la correcta comunicación entre ROS 2 y el robot físico.
