@@ -47,3 +47,7 @@ publishing #33: geometry_msgs.msg.Twist(linear=geometry_msgs.msg.Vector3(x=0.2, 
 Este comando genera un movimiento lineal del robot hacia adelante.
 
 Al ejecutar el nodo que publica estos mensajes, el robot responde de forma inmediata, confirmando la correcta comunicación entre ROS 2 y el robot físico.
+
+##  Nota 
+
+En la simulación se utiliza el topic estándar cmd_vel para enviar comandos de velocidad al robot, ya que es la interfaz más común en ROS 2 y en entornos como Gazebo. Sin embargo, en el robot físico el driver del hardware puede utilizar un topic diferente, como commands/velocity, debido a la configuración específica del fabricante y a la forma en que el controlador del robot está implementado. Por esta razón, puede ser necesario realizar un remapeo entre ambos topics para mantener compatibilidad entre la simulación y el robot real. 🤖✨
